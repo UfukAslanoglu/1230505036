@@ -1,20 +1,12 @@
-# 🔨 Açık Artırma ve Ödeme Simülasyon Sistemi
+# 🔨 Açık Artırma ve Teklif Analiz Sistemi
 
-Bu proje, C programlama dili kullanılarak geliştirilmiş, karmaşık veri yapılarını (`struct`) ve pointer mekanizmalarını temel alan bir açık artırma simülasyonudur. Sistem, katılımcıların tekliflerini analiz ederek kazananı belirler ve özel bir maliyet hesaplama algoritması çalıştırır.
+Bu proje, C dilindeki yapısal programlama (struct) ve işaretçi (pointer) yeteneklerini kullanarak geliştirilmiş bir açık artırma simülasyonudur.
 
-## 🚀 Proje Hakkında
-Bu yazılım, bir açık artırma sürecini dijital ortamda simüle eder. Projenin öne çıkan teknik özellikleri şunlardır:
-- **Yapısal Veri Organizasyonu:** `Teklif`, `Artirma` ve `KazananTeklifSahibi` gibi özel veri yapıları ile veri akışı yönetilir.
-- **Akıllı Ödeme Hesaplama:** Kazananın nihai ödeme miktarı, kendi teklifi ile diğer tüm katılımcıların tekliflerinin toplamı birleştirilerek hesaplanır.
-- **Verimli Veri Aktarımı:** Fonksiyonlar arası veri paylaşımında pointer (işaretçi) kullanılarak bellek verimliliği sağlanmıştır.
+### ✨ Öne Çıkan Özellikler
+- **Veri Yapıları:** Katılımcı ve teklif bilgileri `struct` yapıları ile yönetilir.
+- **Pointer Yönetimi:** Hesaplama sonuçları fonksiyonlar arası pointer ile aktarılarak bellek verimliliği sağlanır.
+- **Dinamik Hesaplama:** En yüksek teklifi bulur ve tüm katılımcıların verilerini analiz ederek nihai ödemeyi hesaplar.
 
-### 🛠️ Kullanılan Programlama Yapıları
-- `struct` & `typedef`: Karmaşık verileri gruplandırmak için.
-- `for` döngüleri: En yüksek teklifi ve toplam maliyeti hesaplamak için.
-- `printf` formatlama: Finansal verilerin (`double`) iki ondalık basamakla gösterilmesi için.
-
-## 💻 Nasıl Çalıştırılır?
-1. Kod dosyasını bilgisayarınıza `acik_arttirma.c` adıyla kaydedin.
-2. Bir C derleyicisi (örneğin GCC) kullanarak derleyin:
-   ```bash
-   gcc acik_arttirma.c -o acik_arttirma
+### 🛠️ Teknik Detaylar
+- Dil: C
+- Yapılar: `typedef struct`, `pointer`, `for` loops, `switch-case` (isteğe bağlı eklenebilir).
